@@ -7,6 +7,8 @@ module QueryTraceSummary
     ASCII_COLOR_RX = /\e\[\d+m/
     EVENT_RX = /([A-Z][A-Za-z0-9_:]+) (Create|Load|Update|Destroy) \((\d+(?:\.\d+)?)ms\)/
 
+    LOCATION_PREFIX_RX = /Query Trace:$/
+
     # Assumes conservative file naming
     LOCATION_RX = /([a-zA-Z0-9_.\-\/]+:\d+:in `.+')$/
 
@@ -41,6 +43,8 @@ module QueryTraceSummary
 
             event_match = nil
 
+            next
+          elsif LOCATION_PREFIX_RX.match(line)
             next
           end
         end

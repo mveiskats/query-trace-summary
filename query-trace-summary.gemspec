@@ -1,7 +1,7 @@
 # coding: utf-8
 Gem::Specification.new do |s|
   s.name = 'query-trace-summary'
-  s.version = '0.0.1'
+  s.version = '0.0.2'
   s.date = '2019-09-23'
   s.summary = 'Generates summary of time consumed by database queries. ' \
               'Helpful to pinpoint where to focus optimization efforts.'
