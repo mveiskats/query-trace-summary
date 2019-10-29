@@ -3,7 +3,7 @@ Helpful to pinpoint where to focus optimization efforts.
 
 ## Usage
 
-1. Add and initialize [active-record-query-trace](https://github.com/brunofacca/active-record-query-trace) gem.
+1. Add and initialize [active_record_query_trace](https://github.com/brunofacca/active-record-query-trace) gem.
 2. Add `gem 'query-trace-summary', group: :development` to your Gemfile
 3. Remove previous logs
 4. Run the problematic code
